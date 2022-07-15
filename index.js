@@ -23,12 +23,12 @@ convertBtn.addEventListener("click", function() {
     let poundUnit = convertUnit.value * kilogram
     let kiloUnit = convertUnit.value * pound
 
-    let unitLength = `${convertUnit.value} meters = ${meterUnit} feet | ${convertUnit.value} feet = ${feetUnit} meters`
+    let unitLength = `${convertUnit.value} meters = ${meterUnit.toFixed(3)} feet | ${convertUnit.value} feet = ${feetUnit.toFixed(3)} meters`
     lengthConvert.textContent = unitLength
 
-    let unitVolume = `${convertUnit.value} litters = ${literUnit} gallons | ${convertUnit.value} gallons = ${gallonUnit} liters`
+    let unitVolume = `${convertUnit.value} litters = ${literUnit.toFixed(3)} gallons | ${convertUnit.value} gallons = ${gallonUnit.toFixed(3)} liters`
     volumeConvert.textContent = unitVolume
 
-    let unitMass = `${convertUnit.value} kilos = ${poundUnit} pounds | ${convertUnit.value} pounds = ${kiloUnit.toFixed(3)} kilos`
+    let unitMass = `${convertUnit.value} kilos = ${poundUnit.toFixed(3)} pounds | ${convertUnit.value} pounds = ${kiloUnit.toFixed(3)} kilos`
     massConvert.textContent = unitMass
 })
